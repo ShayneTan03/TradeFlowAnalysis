@@ -20,5 +20,9 @@ async def handler(websocket):
             break
             print(message)
 
+async def handler(websocket):
+    async for message in websocket:
+        print(message)
+
 if __name__ == "__main__":
     asyncio.run(main())
